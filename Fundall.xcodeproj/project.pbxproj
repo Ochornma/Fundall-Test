@@ -1,0 +1,619 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B44DF3442626DEC500851950 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44DF3432626DEC500851950 /* AppDelegate.swift */; };
+		B44DF3462626DEC500851950 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44DF3452626DEC500851950 /* SceneDelegate.swift */; };
+		B44DF34B2626DEC500851950 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B44DF3492626DEC500851950 /* Main.storyboard */; };
+		B44DF34E2626DEC500851950 /* Fundall.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B44DF34C2626DEC500851950 /* Fundall.xcdatamodeld */; };
+		B44DF3502626DEC700851950 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B44DF34F2626DEC700851950 /* Assets.xcassets */; };
+		B44DF3532626DEC800851950 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B44DF3512626DEC800851950 /* LaunchScreen.storyboard */; };
+		B44DF35E2626DEC800851950 /* FundallTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44DF35D2626DEC800851950 /* FundallTests.swift */; };
+		B44DF3692626DEC800851950 /* FundallUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44DF3682626DEC800851950 /* FundallUITests.swift */; };
+		B44DF37A2627482C00851950 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44DF3792627482C00851950 /* SignUpViewController.swift */; };
+		B44DF37F2627489D00851950 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44DF37E2627489D00851950 /* LoginViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B44DF35A2626DEC800851950 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B44DF3382626DEC500851950 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B44DF33F2626DEC500851950;
+			remoteInfo = Fundall;
+		};
+		B44DF3652626DEC800851950 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B44DF3382626DEC500851950 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B44DF33F2626DEC500851950;
+			remoteInfo = Fundall;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B44DF3402626DEC500851950 /* Fundall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fundall.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B44DF3432626DEC500851950 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B44DF3452626DEC500851950 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B44DF34A2626DEC500851950 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B44DF34D2626DEC500851950 /* Fundall.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Fundall.xcdatamodel; sourceTree = "<group>"; };
+		B44DF34F2626DEC700851950 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B44DF3522626DEC800851950 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B44DF3542626DEC800851950 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B44DF3592626DEC800851950 /* FundallTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FundallTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B44DF35D2626DEC800851950 /* FundallTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FundallTests.swift; sourceTree = "<group>"; };
+		B44DF35F2626DEC800851950 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B44DF3642626DEC800851950 /* FundallUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FundallUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B44DF3682626DEC800851950 /* FundallUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FundallUITests.swift; sourceTree = "<group>"; };
+		B44DF36A2626DEC800851950 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B44DF3792627482C00851950 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		B44DF37E2627489D00851950 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B44DF33D2626DEC500851950 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B44DF3562626DEC800851950 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B44DF3612626DEC800851950 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B44DF3372626DEC500851950 = {
+			isa = PBXGroup;
+			children = (
+				B44DF3422626DEC500851950 /* Fundall */,
+				B44DF35C2626DEC800851950 /* FundallTests */,
+				B44DF3672626DEC800851950 /* FundallUITests */,
+				B44DF3412626DEC500851950 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B44DF3412626DEC500851950 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B44DF3402626DEC500851950 /* Fundall.app */,
+				B44DF3592626DEC800851950 /* FundallTests.xctest */,
+				B44DF3642626DEC800851950 /* FundallUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B44DF3422626DEC500851950 /* Fundall */ = {
+			isa = PBXGroup;
+			children = (
+				B44DF3432626DEC500851950 /* AppDelegate.swift */,
+				B44DF3452626DEC500851950 /* SceneDelegate.swift */,
+				B44DF3492626DEC500851950 /* Main.storyboard */,
+				B44DF34F2626DEC700851950 /* Assets.xcassets */,
+				B44DF3512626DEC800851950 /* LaunchScreen.storyboard */,
+				B44DF3542626DEC800851950 /* Info.plist */,
+				B44DF34C2626DEC500851950 /* Fundall.xcdatamodeld */,
+				B44DF3792627482C00851950 /* SignUpViewController.swift */,
+				B44DF37E2627489D00851950 /* LoginViewController.swift */,
+			);
+			path = Fundall;
+			sourceTree = "<group>";
+		};
+		B44DF35C2626DEC800851950 /* FundallTests */ = {
+			isa = PBXGroup;
+			children = (
+				B44DF35D2626DEC800851950 /* FundallTests.swift */,
+				B44DF35F2626DEC800851950 /* Info.plist */,
+			);
+			path = FundallTests;
+			sourceTree = "<group>";
+		};
+		B44DF3672626DEC800851950 /* FundallUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B44DF3682626DEC800851950 /* FundallUITests.swift */,
+				B44DF36A2626DEC800851950 /* Info.plist */,
+			);
+			path = FundallUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B44DF33F2626DEC500851950 /* Fundall */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B44DF36D2626DEC800851950 /* Build configuration list for PBXNativeTarget "Fundall" */;
+			buildPhases = (
+				B44DF33C2626DEC500851950 /* Sources */,
+				B44DF33D2626DEC500851950 /* Frameworks */,
+				B44DF33E2626DEC500851950 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Fundall;
+			productName = Fundall;
+			productReference = B44DF3402626DEC500851950 /* Fundall.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B44DF3582626DEC800851950 /* FundallTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B44DF3702626DEC800851950 /* Build configuration list for PBXNativeTarget "FundallTests" */;
+			buildPhases = (
+				B44DF3552626DEC800851950 /* Sources */,
+				B44DF3562626DEC800851950 /* Frameworks */,
+				B44DF3572626DEC800851950 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B44DF35B2626DEC800851950 /* PBXTargetDependency */,
+			);
+			name = FundallTests;
+			productName = FundallTests;
+			productReference = B44DF3592626DEC800851950 /* FundallTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B44DF3632626DEC800851950 /* FundallUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B44DF3732626DEC800851950 /* Build configuration list for PBXNativeTarget "FundallUITests" */;
+			buildPhases = (
+				B44DF3602626DEC800851950 /* Sources */,
+				B44DF3612626DEC800851950 /* Frameworks */,
+				B44DF3622626DEC800851950 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B44DF3662626DEC800851950 /* PBXTargetDependency */,
+			);
+			name = FundallUITests;
+			productName = FundallUITests;
+			productReference = B44DF3642626DEC800851950 /* FundallUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B44DF3382626DEC500851950 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					B44DF33F2626DEC500851950 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					B44DF3582626DEC800851950 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = B44DF33F2626DEC500851950;
+					};
+					B44DF3632626DEC800851950 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = B44DF33F2626DEC500851950;
+					};
+				};
+			};
+			buildConfigurationList = B44DF33B2626DEC500851950 /* Build configuration list for PBXProject "Fundall" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B44DF3372626DEC500851950;
+			productRefGroup = B44DF3412626DEC500851950 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B44DF33F2626DEC500851950 /* Fundall */,
+				B44DF3582626DEC800851950 /* FundallTests */,
+				B44DF3632626DEC800851950 /* FundallUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B44DF33E2626DEC500851950 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B44DF3532626DEC800851950 /* LaunchScreen.storyboard in Resources */,
+				B44DF3502626DEC700851950 /* Assets.xcassets in Resources */,
+				B44DF34B2626DEC500851950 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B44DF3572626DEC800851950 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B44DF3622626DEC800851950 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B44DF33C2626DEC500851950 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B44DF37F2627489D00851950 /* LoginViewController.swift in Sources */,
+				B44DF3442626DEC500851950 /* AppDelegate.swift in Sources */,
+				B44DF34E2626DEC500851950 /* Fundall.xcdatamodeld in Sources */,
+				B44DF3462626DEC500851950 /* SceneDelegate.swift in Sources */,
+				B44DF37A2627482C00851950 /* SignUpViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B44DF3552626DEC800851950 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B44DF35E2626DEC800851950 /* FundallTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B44DF3602626DEC800851950 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B44DF3692626DEC800851950 /* FundallUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B44DF35B2626DEC800851950 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B44DF33F2626DEC500851950 /* Fundall */;
+			targetProxy = B44DF35A2626DEC800851950 /* PBXContainerItemProxy */;
+		};
+		B44DF3662626DEC800851950 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B44DF33F2626DEC500851950 /* Fundall */;
+			targetProxy = B44DF3652626DEC800851950 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B44DF3492626DEC500851950 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B44DF34A2626DEC500851950 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B44DF3512626DEC800851950 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B44DF3522626DEC800851950 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B44DF36B2626DEC800851950 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B44DF36C2626DEC800851950 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B44DF36E2626DEC800851950 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W2G3QF66D7;
+				INFOPLIST_FILE = Fundall/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.fundall.Fundall;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B44DF36F2626DEC800851950 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W2G3QF66D7;
+				INFOPLIST_FILE = Fundall/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.fundall.Fundall;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B44DF3712626DEC800851950 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W2G3QF66D7;
+				INFOPLIST_FILE = FundallTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.fundall.FundallTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fundall.app/Fundall";
+			};
+			name = Debug;
+		};
+		B44DF3722626DEC800851950 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W2G3QF66D7;
+				INFOPLIST_FILE = FundallTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.fundall.FundallTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fundall.app/Fundall";
+			};
+			name = Release;
+		};
+		B44DF3742626DEC800851950 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W2G3QF66D7;
+				INFOPLIST_FILE = FundallUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.fundall.FundallUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Fundall;
+			};
+			name = Debug;
+		};
+		B44DF3752626DEC800851950 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W2G3QF66D7;
+				INFOPLIST_FILE = FundallUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.fundall.FundallUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Fundall;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B44DF33B2626DEC500851950 /* Build configuration list for PBXProject "Fundall" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B44DF36B2626DEC800851950 /* Debug */,
+				B44DF36C2626DEC800851950 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B44DF36D2626DEC800851950 /* Build configuration list for PBXNativeTarget "Fundall" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B44DF36E2626DEC800851950 /* Debug */,
+				B44DF36F2626DEC800851950 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B44DF3702626DEC800851950 /* Build configuration list for PBXNativeTarget "FundallTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B44DF3712626DEC800851950 /* Debug */,
+				B44DF3722626DEC800851950 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B44DF3732626DEC800851950 /* Build configuration list for PBXNativeTarget "FundallUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B44DF3742626DEC800851950 /* Debug */,
+				B44DF3752626DEC800851950 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B44DF34C2626DEC500851950 /* Fundall.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B44DF34D2626DEC500851950 /* Fundall.xcdatamodel */,
+			);
+			currentVersion = B44DF34D2626DEC500851950 /* Fundall.xcdatamodel */;
+			path = Fundall.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = B44DF3382626DEC500851950 /* Project object */;
+}
