@@ -1,5 +1,5 @@
 //
-//  SignUpViewController.swift
+//  LoginViewController.swift
 //  Fundall
 //
 //  Created by Promise Ochornma on 14/04/2021.
@@ -7,23 +7,22 @@
 
 import UIKit
 
-class SignUpViewController: UIViewController {
-    @IBOutlet weak var signUpButton: UIButton!
+class LoginViewController: UIViewController {
+    let constant = Constants()
     
-
     override func viewDidLoad() {
         super.viewDidLoad()
-        signUpButton.layer.cornerRadius = 5
+
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func signUp(){
-        let stoaryboard = UIStoryboard(name: "Main", bundle: nil)
-        let mainVc = stoaryboard.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
-        mainVc.modalPresentationStyle = .fullScreen
-        self.present(mainVc, animated: true, completion: nil)
+    @IBAction func signInPressed(){
+            constant.presentVC(presenter: self, identifier: "SignUpViewController")
     }
     
+    @IBAction func passwordPressed(){
+        constant.presentVC(presenter: self, identifier: "PasswordViewController")
+    }
 
     /*
     // MARK: - Navigation
