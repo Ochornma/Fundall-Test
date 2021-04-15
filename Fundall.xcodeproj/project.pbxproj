@@ -21,6 +21,8 @@
 		B44DF3922627505100851950 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44DF3912627505100851950 /* Extensions.swift */; };
 		B44DF39A2627557400851950 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44DF3992627557400851950 /* Constants.swift */; };
 		B44DF3A026275F5000851950 /* PasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44DF39F26275F5000851950 /* PasswordViewController.swift */; };
+		B44DF3FE262841EC00851950 /* FundallProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44DF3FD262841EC00851950 /* FundallProgress.swift */; };
+		B44DF4032628435000851950 /* FundallHomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44DF4022628435000851950 /* FundallHomeTableViewCell.swift */; };
 		E38177B6C77275A608D111A2 /* Pods_Fundall_FundallUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5EEF19218DECD9AC194F4D8 /* Pods_Fundall_FundallUITests.framework */; };
 		F591B2ABB4A9EE26DD365DF2 /* Pods_Fundall.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB5005561E5FCD0266C53B9 /* Pods_Fundall.framework */; };
 /* End PBXBuildFile section */
@@ -68,6 +70,8 @@
 		B44DF3912627505100851950 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		B44DF3992627557400851950 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		B44DF39F26275F5000851950 /* PasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordViewController.swift; sourceTree = "<group>"; };
+		B44DF3FD262841EC00851950 /* FundallProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FundallProgress.swift; sourceTree = "<group>"; };
+		B44DF4022628435000851950 /* FundallHomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FundallHomeTableViewCell.swift; sourceTree = "<group>"; };
 		C5EEF19218DECD9AC194F4D8 /* Pods_Fundall_FundallUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fundall_FundallUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6AD88C4818BA4F4D73104DD /* Pods-FundallTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FundallTests.debug.xcconfig"; path = "Target Support Files/Pods-FundallTests/Pods-FundallTests.debug.xcconfig"; sourceTree = "<group>"; };
 		FAB5005561E5FCD0266C53B9 /* Pods_Fundall.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fundall.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -139,6 +143,7 @@
 		B44DF3422626DEC500851950 /* Fundall */ = {
 			isa = PBXGroup;
 			children = (
+				B44DF3FC262841D200851950 /* views */,
 				B44DF39E26275F3400851950 /* Auth */,
 				B44DF3902627503900851950 /* Extensions */,
 				B44DF3432626DEC500851950 /* AppDelegate.swift */,
@@ -187,6 +192,15 @@
 				B44DF39F26275F5000851950 /* PasswordViewController.swift */,
 			);
 			path = Auth;
+			sourceTree = "<group>";
+		};
+		B44DF3FC262841D200851950 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				B44DF3FD262841EC00851950 /* FundallProgress.swift */,
+				B44DF4022628435000851950 /* FundallHomeTableViewCell.swift */,
+			);
+			path = views;
 			sourceTree = "<group>";
 		};
 		FEC43C48448EC1F81ED748B6 /* Frameworks */ = {
@@ -438,12 +452,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				B44DF37F2627489D00851950 /* LoginViewController.swift in Sources */,
+				B44DF4032628435000851950 /* FundallHomeTableViewCell.swift in Sources */,
 				B44DF3A026275F5000851950 /* PasswordViewController.swift in Sources */,
 				B44DF3922627505100851950 /* Extensions.swift in Sources */,
 				B44DF3442626DEC500851950 /* AppDelegate.swift in Sources */,
 				B44DF34E2626DEC500851950 /* Fundall.xcdatamodeld in Sources */,
 				B44DF39A2627557400851950 /* Constants.swift in Sources */,
 				B44DF3462626DEC500851950 /* SceneDelegate.swift in Sources */,
+				B44DF3FE262841EC00851950 /* FundallProgress.swift in Sources */,
 				B44DF37A2627482C00851950 /* SignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

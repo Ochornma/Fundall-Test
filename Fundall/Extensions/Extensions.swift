@@ -25,3 +25,15 @@ extension UITextField{
     }
     
 }
+
+extension UIViewController{
+    
+    static var identifier: String{
+        return String(describing: self)
+    }
+    
+    static func instantiate() -> Self{
+        let stoaryboard = UIStoryboard(name: "Main", bundle: nil)
+        return stoaryboard.instantiateViewController(identifier: identifier) as Self
+    }
+}

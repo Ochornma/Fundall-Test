@@ -5,6 +5,8 @@ target 'Fundall' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 pod 'TransitionButton'
+pod 'Kingfisher', '~> 6.0'
+
   # Pods for Fundall
 
   target 'FundallTests' do
