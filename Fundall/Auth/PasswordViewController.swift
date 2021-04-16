@@ -50,6 +50,7 @@ class PasswordViewController: UIViewController{
             let url = URL(string: urlString ?? " ")
             avartar.kf.setImage(with: url)
         }
+        avartar.layer.cornerRadius = avartar.frame.height/2
         let tap1 = UITapGestureRecognizer(target: self, action: #selector(self.uploadData))
         uploadLabel.addGestureRecognizer(tap1)
         indicator.isHidden = true

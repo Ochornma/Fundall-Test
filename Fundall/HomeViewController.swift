@@ -35,6 +35,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
             let url = URL(string: urlString ?? " ")
             avartar.kf.setImage(with: url)
         }
+        avartar.layer.cornerRadius = avartar.frame.height/2
         getProfile()
       
         // Do any additional setup after loading the view.
