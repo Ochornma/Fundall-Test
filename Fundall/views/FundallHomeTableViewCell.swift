@@ -31,10 +31,10 @@ class FundallHomeTableViewCell: UITableViewCell {
     }
     
     func setup() {
-        tableCard.layer.cornerRadius = 5
+        tableCard.layer.cornerRadius = 10
         statusImage.image = UIImage(named: "okay")
         itemImage.image = UIImage(named: "burger")
-        progress.progress = 0.4
+        progress.progress = 0.75
         item.text = "Lunch & Dinner"
         dailyPrice.text = "$52/day"
         spendingStatus.text = "Your food spending is still on track"

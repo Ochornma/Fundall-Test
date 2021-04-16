@@ -23,6 +23,14 @@ class LoginViewController: UIViewController {
     @IBAction func passwordPressed(){
         constant.presentVC(presenter: self, identifier: "PasswordViewController")
     }
+    
+    
+  
+    
+    
+    @IBAction func biometricPressed(){
+        constant.presentVC(presenter: self, identifier: "HomeViewController")
+    }
 
     /*
     // MARK: - Navigation

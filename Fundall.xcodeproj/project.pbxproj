@@ -23,6 +23,10 @@
 		B44DF3A026275F5000851950 /* PasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44DF39F26275F5000851950 /* PasswordViewController.swift */; };
 		B44DF3FE262841EC00851950 /* FundallProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44DF3FD262841EC00851950 /* FundallProgress.swift */; };
 		B44DF4032628435000851950 /* FundallHomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44DF4022628435000851950 /* FundallHomeTableViewCell.swift */; };
+		B44DF4082628554D00851950 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44DF4072628554D00851950 /* HomeViewController.swift */; };
+		B44DF40D2628BC9B00851950 /* FundallCardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44DF40C2628BC9B00851950 /* FundallCardCollectionViewCell.swift */; };
+		B44DF4122628BDCF00851950 /* FundallCardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44DF4112628BDCF00851950 /* FundallCardTableViewCell.swift */; };
+		B44DF4172628CA2C00851950 /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44DF4162628CA2C00851950 /* CardViewController.swift */; };
 		E38177B6C77275A608D111A2 /* Pods_Fundall_FundallUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5EEF19218DECD9AC194F4D8 /* Pods_Fundall_FundallUITests.framework */; };
 		F591B2ABB4A9EE26DD365DF2 /* Pods_Fundall.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB5005561E5FCD0266C53B9 /* Pods_Fundall.framework */; };
 /* End PBXBuildFile section */
@@ -72,6 +76,10 @@
 		B44DF39F26275F5000851950 /* PasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordViewController.swift; sourceTree = "<group>"; };
 		B44DF3FD262841EC00851950 /* FundallProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FundallProgress.swift; sourceTree = "<group>"; };
 		B44DF4022628435000851950 /* FundallHomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FundallHomeTableViewCell.swift; sourceTree = "<group>"; };
+		B44DF4072628554D00851950 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		B44DF40C2628BC9B00851950 /* FundallCardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FundallCardCollectionViewCell.swift; sourceTree = "<group>"; };
+		B44DF4112628BDCF00851950 /* FundallCardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FundallCardTableViewCell.swift; sourceTree = "<group>"; };
+		B44DF4162628CA2C00851950 /* CardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
 		C5EEF19218DECD9AC194F4D8 /* Pods_Fundall_FundallUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fundall_FundallUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6AD88C4818BA4F4D73104DD /* Pods-FundallTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FundallTests.debug.xcconfig"; path = "Target Support Files/Pods-FundallTests/Pods-FundallTests.debug.xcconfig"; sourceTree = "<group>"; };
 		FAB5005561E5FCD0266C53B9 /* Pods_Fundall.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fundall.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -153,6 +161,8 @@
 				B44DF3512626DEC800851950 /* LaunchScreen.storyboard */,
 				B44DF3542626DEC800851950 /* Info.plist */,
 				B44DF34C2626DEC500851950 /* Fundall.xcdatamodeld */,
+				B44DF4072628554D00851950 /* HomeViewController.swift */,
+				B44DF4162628CA2C00851950 /* CardViewController.swift */,
 			);
 			path = Fundall;
 			sourceTree = "<group>";
@@ -199,6 +209,8 @@
 			children = (
 				B44DF3FD262841EC00851950 /* FundallProgress.swift */,
 				B44DF4022628435000851950 /* FundallHomeTableViewCell.swift */,
+				B44DF40C2628BC9B00851950 /* FundallCardCollectionViewCell.swift */,
+				B44DF4112628BDCF00851950 /* FundallCardTableViewCell.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -452,12 +464,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				B44DF37F2627489D00851950 /* LoginViewController.swift in Sources */,
+				B44DF40D2628BC9B00851950 /* FundallCardCollectionViewCell.swift in Sources */,
 				B44DF4032628435000851950 /* FundallHomeTableViewCell.swift in Sources */,
 				B44DF3A026275F5000851950 /* PasswordViewController.swift in Sources */,
 				B44DF3922627505100851950 /* Extensions.swift in Sources */,
+				B44DF4122628BDCF00851950 /* FundallCardTableViewCell.swift in Sources */,
 				B44DF3442626DEC500851950 /* AppDelegate.swift in Sources */,
 				B44DF34E2626DEC500851950 /* Fundall.xcdatamodeld in Sources */,
+				B44DF4172628CA2C00851950 /* CardViewController.swift in Sources */,
 				B44DF39A2627557400851950 /* Constants.swift in Sources */,
+				B44DF4082628554D00851950 /* HomeViewController.swift in Sources */,
 				B44DF3462626DEC500851950 /* SceneDelegate.swift in Sources */,
 				B44DF3FE262841EC00851950 /* FundallProgress.swift in Sources */,
 				B44DF37A2627482C00851950 /* SignUpViewController.swift in Sources */,

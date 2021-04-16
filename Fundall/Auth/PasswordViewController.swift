@@ -32,6 +32,10 @@ class PasswordViewController: UIViewController{
     @IBAction func newAccountPressed(){
         constant.presentVC(presenter: self, identifier: "SignUpViewController")
     }
+    
+    @IBAction func loginPressed(){
+        constant.presentVC(presenter: self, identifier: "HomeViewController")
+    }
 
     /*
     // MARK: - Navigation
