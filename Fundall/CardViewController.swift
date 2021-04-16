@@ -36,14 +36,23 @@ class CardViewController: UIViewController {
     }
     
     @IBAction func continuePressed(){
-        UIView.animate(withDuration: 0.5, animations: {
+       /* UIView.animate(withDuration: 0.5, animations: {
             self.confirmationView.alpha = 1
         }) { [self] _ in
             cardCollection.isUserInteractionEnabled = false
            cardTable.isUserInteractionEnabled = false
             confirmationView.isHidden = false
             continueButton.isUserInteractionEnabled = false
-        }
+        }*/
+        let alert = UIAlertController(
+            title: "Yippeee!",
+            message: "Card Request Successful.Welcome to tomorrow",
+            preferredStyle: UIAlertController.Style.alert
+        )
+        let action = UIAlertAction(title: "REFER YOUR FRIENDS & EARN", style: .default, handler: nil)
+        action.setValue(UIColor.init(red: 32/255, green: 209/255, blue: 35/255, alpha: 1), forKey: "titleTextColor")
+        alert.addAction(action)
+        self.present(alert, animated: true, completion: nil)
     }
     
     @IBAction func dismissPopUp(){

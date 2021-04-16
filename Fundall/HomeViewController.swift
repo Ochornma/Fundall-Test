@@ -36,6 +36,11 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     @IBAction func requestCard(){
         constant.presentVC(presenter: self, identifier: "CardViewController")
     }
+    
+    @IBAction func checkAnalytics(){
+        
+        constant.presentVC(presenter: self, identifier: "AnalyticViewController")
+    }
 
     /*
     // MARK: - Navigation

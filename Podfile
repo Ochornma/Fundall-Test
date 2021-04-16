@@ -6,6 +6,7 @@ target 'Fundall' do
   use_frameworks!
 pod 'TransitionButton'
 pod 'Kingfisher', '~> 6.0'
+pod 'Charts'
 
   # Pods for Fundall
 
