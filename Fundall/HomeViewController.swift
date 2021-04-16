@@ -20,20 +20,22 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     let constant = Constants()
     let defaults = UserDefaults.standard
     var soft = SoftViews()
+    var naira = "₦"
     private var disposebag = DisposeBag()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         fundTable.delegate = self
         fundTable.dataSource = self
-        spentLabel.text = defaults.string(forKey: "spent") ?? " "
-        incomeLabel.text = defaults.string(forKey: "income") ?? " "
-        totalLabel.text = defaults.string(forKey: "total") ?? " "
+        spentLabel.text = "\(naira)\(defaults.string(forKey: "spent") ?? "")"
+        incomeLabel.text = "\(naira)\(defaults.string(forKey: "income") ?? " ")"
+        totalLabel.text = "\(naira)\(defaults.string(forKey: "total") ?? " ")"
         let urlString = defaults.string(forKey: "avatar")
         if urlString != nil && !(urlString?.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty)! {
             let url = URL(string: urlString ?? " ")
             avartar.kf.setImage(with: url)
         }
+        getProfile()
       
         // Do any additional setup after loading the view.
     }
@@ -70,9 +72,9 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
             defaults.set(result.success?.data?.firstname, forKey: "spent")
             defaults.set(result.success?.data?.avatar, forKey: "income")
             defaults.set(result.success?.data?.totalBalance, forKey: "total")
-            spentLabel.text = result.success?.data?.spent
-            incomeLabel.text = result.success?.data?.income
-            totalLabel.text = result.success?.data?.totalBalance
+            spentLabel.text = "\(naira)\(result.success?.data?.spent ?? " ")"
+            incomeLabel.text = "\(naira)\(result.success?.data?.income ?? " ")"
+            totalLabel.text = "\(naira)\(result.success?.data?.totalBalance ?? " ")"
             let urlString = result.success?.data?.avatar
             if urlString != nil && !(urlString?.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty)! {
                 let url = URL(string: result.success?.data?.avatar ?? "")

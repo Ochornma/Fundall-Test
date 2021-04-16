@@ -594,6 +594,20 @@
                                                     <action selector="newAccountPressed" destination="rXj-xs-WZY" eventType="touchUpInside" id="biW-Na-d1k"/>
                                                 </connections>
                                             </button>
+                                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="tAR-bm-QCw">
+                                                <rect key="frame" x="182" y="347.5" width="50" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="WNe-aw-uOU"/>
+                                                    <constraint firstAttribute="width" constant="50" id="coD-ht-AhX"/>
+                                                </constraints>
+                                                <color key="color" red="0.0039215686269999999" green="0.41176470590000003" blue="0.21960784310000001" alpha="0.8980392157" colorSpace="calibratedRGB"/>
+                                            </activityIndicatorView>
+                                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Upload Avatar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rMG-iJ-RSC">
+                                                <rect key="frame" x="153.5" y="187.5" width="107" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
@@ -603,12 +617,16 @@
                                             <constraint firstItem="jit-ca-M5d" firstAttribute="top" secondItem="d8N-dg-HTD" secondAttribute="bottom" constant="50" id="IgH-8S-xS3"/>
                                             <constraint firstAttribute="trailing" secondItem="4pE-0t-xHQ" secondAttribute="trailing" constant="20" id="JBP-gO-RN2"/>
                                             <constraint firstItem="3Py-7A-iuX" firstAttribute="centerX" secondItem="O0o-r3-CMj" secondAttribute="centerX" id="JdT-Yc-gg7"/>
+                                            <constraint firstItem="rMG-iJ-RSC" firstAttribute="top" secondItem="3Py-7A-iuX" secondAttribute="bottom" constant="5" id="MbU-gC-mKK"/>
+                                            <constraint firstItem="tAR-bm-QCw" firstAttribute="top" secondItem="qp3-T2-IhW" secondAttribute="bottom" constant="5" id="St6-5g-wXk"/>
                                             <constraint firstItem="Yod-P4-dOo" firstAttribute="top" secondItem="4pE-0t-xHQ" secondAttribute="bottom" constant="35" id="Wpu-0U-AIP"/>
                                             <constraint firstItem="Yod-P4-dOo" firstAttribute="leading" secondItem="O0o-r3-CMj" secondAttribute="leading" constant="20" id="aOz-42-kiz"/>
                                             <constraint firstItem="jit-ca-M5d" firstAttribute="leading" secondItem="O0o-r3-CMj" secondAttribute="leading" constant="20" id="bs9-5H-kp2"/>
                                             <constraint firstItem="d8N-dg-HTD" firstAttribute="centerX" secondItem="O0o-r3-CMj" secondAttribute="centerX" id="jro-r0-z7W"/>
+                                            <constraint firstItem="tAR-bm-QCw" firstAttribute="centerX" secondItem="O0o-r3-CMj" secondAttribute="centerX" id="l2u-U9-M3m"/>
                                             <constraint firstItem="d8N-dg-HTD" firstAttribute="top" secondItem="ZkR-K3-5M4" secondAttribute="bottom" constant="5" id="lKe-Sc-pgv"/>
                                             <constraint firstItem="3Py-7A-iuX" firstAttribute="top" secondItem="O0o-r3-CMj" secondAttribute="top" constant="150" id="mXC-86-cYE"/>
+                                            <constraint firstItem="rMG-iJ-RSC" firstAttribute="centerX" secondItem="O0o-r3-CMj" secondAttribute="centerX" id="ml0-m6-T5m"/>
                                             <constraint firstItem="4pE-0t-xHQ" firstAttribute="top" secondItem="jit-ca-M5d" secondAttribute="bottom" constant="100" id="oIv-B5-xlF"/>
                                             <constraint firstItem="ZkR-K3-5M4" firstAttribute="centerX" secondItem="O0o-r3-CMj" secondAttribute="centerX" id="p17-c4-2U5"/>
                                             <constraint firstItem="qp3-T2-IhW" firstAttribute="top" secondItem="3Py-7A-iuX" secondAttribute="bottom" constant="60" id="pG8-U5-OvT"/>
@@ -652,14 +670,16 @@
                     <connections>
                         <outlet property="avartar" destination="qp3-T2-IhW" id="t5z-m4-2HA"/>
                         <outlet property="emailLabel" destination="d8N-dg-HTD" id="sWY-iS-Svm"/>
+                        <outlet property="indicator" destination="tAR-bm-QCw" id="Mrn-vf-yY8"/>
                         <outlet property="loginButton" destination="4pE-0t-xHQ" id="8Qm-dD-vJG"/>
                         <outlet property="passwordtext" destination="Bkd-zl-qJN" id="72K-LN-uRL"/>
+                        <outlet property="uploadLabel" destination="rMG-iJ-RSC" id="4Cs-OB-2me"/>
                         <outlet property="welcomeLabel" destination="ZkR-K3-5M4" id="2UY-4o-qdx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ab9-Iu-20K" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1043" y="62"/>
+            <point key="canvasLocation" x="1042.0289855072465" y="61.607142857142854"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="jNh-0g-ZF8">

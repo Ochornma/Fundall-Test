@@ -15,8 +15,10 @@ class PasswordViewController: UIViewController{
     @IBOutlet weak var passwordtext: UITextField!
     @IBOutlet weak var emailLabel: UILabel!
     @IBOutlet weak var welcomeLabel: UILabel!
+    @IBOutlet weak var uploadLabel: UILabel!
     @IBOutlet weak var avartar: UIImageView!
     @IBOutlet weak var loginButton: TransitionButton!
+    @IBOutlet weak var indicator: UIActivityIndicatorView!
     let eyebutton = UIButton(type: .custom)
     
     let constant = Constants()
@@ -38,7 +40,9 @@ class PasswordViewController: UIViewController{
         email = defaults.string(forKey: "email")
         name = defaults.string(forKey: "name")
         
-        
+        NetworkUpload.shared.generaldelegate = self
+        NetworkUpload.shared.unaunthenticateDelegae = self
+        NetworkUpload.shared.uploadDelegate = self
         emailLabel.text = email
         welcomeLabel.text = "We miss you, \(name ?? " ")"
         let urlString = defaults.string(forKey: "avatar")
@@ -46,7 +50,15 @@ class PasswordViewController: UIViewController{
             let url = URL(string: urlString ?? " ")
             avartar.kf.setImage(with: url)
         }
+        let tap1 = UITapGestureRecognizer(target: self, action: #selector(self.uploadData))
+        uploadLabel.addGestureRecognizer(tap1)
+        indicator.isHidden = true
         // Do any additional setup after loading the view.
+    }
+    
+    func stopAnimation(){
+        indicator.stopAnimating()
+        indicator.isHidden = true
     }
     
     @IBAction func cancelPressed(){
@@ -107,5 +119,59 @@ extension PasswordViewController{
         issecret = !issecret
         
     }
+    
+    @objc func uploadData(){
+        let vc = UIImagePickerController()
+        vc.sourceType = .photoLibrary
+       // vc.sourceType = .camera
+        vc.delegate = self
+        vc.allowsEditing = true
+        present(vc, animated: true)
+    }
    
 }
+
+/**
+ var generaldelegate: UploadErrorMessage?
+ var uploadDelegate: UploadSuccess?
+ var unaunthenticateDelegae: Unaunthenticated?
+ */
+
+extension PasswordViewController: UploadErrorMessage, UploadSuccess, Unaunthenticated{
+    func uploadError() {
+        stopAnimation()
+        soft.showOkayableMessage("Error", message: "Error in uploading avartar", vc: self)
+    }
+    
+    func upload(respone: AvatarResponse) {
+        stopAnimation()
+        let url = URL(string: respone.success?.url ?? " ")
+        avartar.kf.setImage(with: url)
+        soft.showOkayableMessage("Success", message: "Successful", vc: self)
+    }
+    
+    func errow() {
+        stopAnimation()
+        soft.unauntenticated(" ", message: "Session Expired", vc: self)
+    }
+    
+    
+}
+
+extension PasswordViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate{
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+   
+        if let image = info[UIImagePickerController.InfoKey.editedImage] as? UIImage{
+            indicator.startAnimating()
+            indicator.isHidden = false
+            let imageUrl = info[UIImagePickerController.InfoKey.referenceURL] as! NSURL
+            NetworkUpload.shared.uploadDocument(image: image, imageUrl: imageUrl)
+        }
+        picker.dismiss(animated: true)
+    }
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        picker.dismiss(animated: true)
+        stopAnimation()
+    }
+}
+
