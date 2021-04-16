@@ -14,6 +14,8 @@ class CardViewController: UIViewController {
     @IBOutlet weak var continueButton: UIButton!
     @IBOutlet weak var cardCollection: UICollectionView!
     @IBOutlet weak var cardTable: UITableView!
+    @IBOutlet weak var avartar: UIImageView!
+    let defaults = UserDefaults.standard
     var cell:FundallCardTableViewCell!
     var cell2:FundallCardCollectionViewCell!
     
@@ -24,6 +26,12 @@ class CardViewController: UIViewController {
         cardTable.delegate = self
         cardTable.dataSource = self
         confirmationView.layer.cornerRadius = 10
+        let urlString = defaults.string(forKey: "avatar")
+        if urlString != nil && !(urlString?.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty)! {
+            let url = URL(string: urlString ?? " ")
+            avartar.kf.setImage(with: url)
+        }
+        avartar.layer.cornerRadius = avartar.frame.height/2
         //cardCollection.isUserInteractionEnabled = false
        // cardTable.isUserInteractionEnabled = false
         

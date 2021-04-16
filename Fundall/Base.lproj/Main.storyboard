@@ -992,9 +992,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your New Card" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KTT-8a-8Or">
-                                <rect key="frame" x="124.5" y="79" width="165" height="50"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your New Card" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KTT-8a-8Or">
+                                <rect key="frame" x="131" y="79" width="152" height="50"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -1216,6 +1216,7 @@ Welcome to tomorrow</string>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="avartar" destination="56S-Df-KkA" id="55B-Tg-yEf"/>
                         <outlet property="cardCollection" destination="LXX-cA-0ZK" id="MsE-qO-djW"/>
                         <outlet property="cardTable" destination="VNE-RT-0Aa" id="B1i-sm-0QV"/>
                         <outlet property="confirmationView" destination="8cD-35-biS" id="k3U-tX-43v"/>
