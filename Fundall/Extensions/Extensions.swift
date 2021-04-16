@@ -65,10 +65,12 @@ extension BarChartView {
         
         let chartDataSet1 = BarChartDataSet(entries: dataEntries1, label: "")
         chartDataSet1.barBorderColor = .red
+        chartDataSet1.drawValuesEnabled = false
         chartDataSet1.stackLabels = ["Salary", "Petty Cash", "Bonus", "Allowance", "Uncategorized", "Others"]
         chartDataSet1.colors =  [UIColor.yellow, UIColor.blue, UIColor.red, UIColor.purple, UIColor.green, UIColor.brown]
         
         let chartData = BarChartData(dataSets: [chartDataSet1])
+     
         
         let chartFormatter = BarChartFormatter(values: xValues)
         let xAxis = XAxis()

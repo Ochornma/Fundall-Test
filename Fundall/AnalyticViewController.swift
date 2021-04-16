@@ -23,7 +23,7 @@ class AnalyticViewController: UIViewController {
         analyticsTableView.dataSource = self
         analyticsView.layer.cornerRadius = 20
         let avg = ChartLimitLine(limit: 10.0, label: "Average")
-        analyticsChart.rightAxis.addLimitLine(avg)
+        analyticsChart.leftAxis.addLimitLine(avg)
         setChart()
         // Do any additional setup after loading the view.
     }
@@ -40,8 +40,16 @@ class AnalyticViewController: UIViewController {
         analyticsChart.xAxis.drawAxisLineEnabled = false
         analyticsChart.leftAxis.drawAxisLineEnabled = false
         analyticsChart.rightAxis.drawAxisLineEnabled = false
+        analyticsChart.chartDescription?.enabled = false
+        analyticsChart.xAxis.drawGridLinesEnabled = false
+        analyticsChart.xAxis.drawLabelsEnabled = false
+        analyticsChart.xAxis.drawAxisLineEnabled = false
+        analyticsChart.rightAxis.enabled = false
+        //analyticsChart.leftAxis.enabled = false
+        analyticsChart.drawBordersEnabled = false
+        analyticsChart.legend.form = .line
         
-        analyticsChart.setBarChartData(xValues: months, yValues1: scans, yValues2: scans, yValues3: scans2, yValues4: scans, yValues5: scans3, yValues6: scans)
+        analyticsChart.setBarChartData(xValues: months, yValues1: scans, yValues2: points, yValues3: scans2, yValues4: points2, yValues5: scans3, yValues6: points3)
         
     }
     

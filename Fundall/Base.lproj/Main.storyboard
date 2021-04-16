@@ -417,7 +417,11 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="nH3-8w-c0z">
-                                <rect key="frame" x="159" y="370.5" width="96" height="75"/>
+                                <rect key="frame" x="162" y="363" width="90" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="k01-u4-N8g"/>
+                                    <constraint firstAttribute="height" constant="90" id="rcd-La-IGq"/>
+                                </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iWe-Q4-KpW">
                                 <rect key="frame" x="333" y="769" width="71" height="83"/>
@@ -434,19 +438,19 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chimdi’s lifestyle" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ceI-LB-tDX">
-                                <rect key="frame" x="20" y="465.5" width="374" height="21"/>
+                                <rect key="frame" x="20" y="473" width="374" height="21"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gjl-du-eyS">
-                                <rect key="frame" x="109.5" y="506.5" width="195" height="30"/>
+                                <rect key="frame" x="109.5" y="514" width="195" height="30"/>
                                 <state key="normal" title="Not Chimdi? Switch Account">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kaa-DA-tni">
-                                <rect key="frame" x="115.5" y="546.5" width="183" height="30"/>
+                                <rect key="frame" x="115.5" y="554" width="183" height="30"/>
                                 <state key="normal" title="New here? Create Account">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -1044,6 +1048,10 @@
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uJM-HI-NsJ">
                                                     <rect key="frame" x="0.0" y="0.0" width="140" height="210"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="140" id="CC9-YF-irI"/>
+                                                        <constraint firstAttribute="height" constant="210" id="dct-tN-R2F"/>
+                                                    </constraints>
                                                 </imageView>
                                             </subviews>
                                             <constraints>
@@ -1441,6 +1449,10 @@ Welcome to tomorrow</string>
                                                                     <subviews>
                                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 532" translatesAutoresizingMaskIntoConstraints="NO" id="0kH-h1-mGn">
                                                                             <rect key="frame" x="0.0" y="0.0" width="75" height="75"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="height" constant="75" id="2Ti-p4-F7o"/>
+                                                                                <constraint firstAttribute="width" constant="75" id="baS-uZ-yc6"/>
+                                                                            </constraints>
                                                                         </imageView>
                                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="burger" translatesAutoresizingMaskIntoConstraints="NO" id="epB-Jm-WoZ">
                                                                             <rect key="frame" x="25" y="25" width="25" height="25"/>
