@@ -10,11 +10,11 @@ import Foundation
 
 // MARK: - LoginResponse
 struct LoginResponse: Codable {
-    let success: Success?
+    let success: LoginSuccess?
 }
 
 // MARK: - Success
-struct Success: Codable {
+struct LoginSuccess: Codable {
     let user: User?
     let status: String?
 }

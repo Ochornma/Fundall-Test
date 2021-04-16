@@ -392,8 +392,12 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="emailField" destination="qHa-oH-gGw" id="aio-73-0gg"/>
+                        <outlet property="firstName" destination="fWZ-q9-5W5" id="baB-Ko-f5c"/>
+                        <outlet property="lastName" destination="MQJ-AO-AaA" id="srq-IX-JKL"/>
                         <outlet property="loginLabel" destination="onu-YR-986" id="ZVZ-W9-GEZ"/>
                         <outlet property="passwordtext" destination="jil-rR-vwA" id="vxs-I9-ET9"/>
+                        <outlet property="phoneField" destination="uZ8-CX-sxr" id="6Qa-Gp-cWK"/>
                         <outlet property="signUpButton" destination="XGR-fC-4fW" id="g8S-QW-nkV"/>
                     </connections>
                 </viewController>
@@ -473,6 +477,10 @@
                             <constraint firstItem="QfF-zJ-6ME" firstAttribute="bottom" secondItem="iWe-Q4-KpW" secondAttribute="bottom" constant="10" id="xQe-Fr-DbT"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="avartar" destination="nH3-8w-c0z" id="u3U-4N-eQh"/>
+                        <outlet property="welcomeLabel" destination="ceI-LB-tDX" id="6sM-pO-pKy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9MV-8X-fda" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -642,7 +650,11 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="avartar" destination="qp3-T2-IhW" id="t5z-m4-2HA"/>
+                        <outlet property="emailLabel" destination="d8N-dg-HTD" id="sWY-iS-Svm"/>
+                        <outlet property="loginButton" destination="4pE-0t-xHQ" id="8Qm-dD-vJG"/>
                         <outlet property="passwordtext" destination="Bkd-zl-qJN" id="72K-LN-uRL"/>
+                        <outlet property="welcomeLabel" destination="ZkR-K3-5M4" id="2UY-4o-qdx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ab9-Iu-20K" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -682,6 +694,10 @@
                                                     </button>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar" translatesAutoresizingMaskIntoConstraints="NO" id="oc0-b7-8X2">
                                                         <rect key="frame" x="337" y="50" width="57" height="57"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="57" id="D5w-1j-ywG"/>
+                                                            <constraint firstAttribute="height" constant="57" id="U1e-N8-QvN"/>
+                                                        </constraints>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fundall e-Wallet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZUE-TV-20R">
                                                         <rect key="frame" x="105" y="68" width="204" height="33"/>
@@ -707,8 +723,8 @@
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Income" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PSw-H8-nH1">
-                                                        <rect key="frame" x="322.5" y="228" width="41.5" height="15"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Spent" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PSw-H8-nH1">
+                                                        <rect key="frame" x="330.5" y="228" width="33.5" height="15"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -933,7 +949,11 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="avartar" destination="oc0-b7-8X2" id="UkX-UL-Spj"/>
                         <outlet property="fundTable" destination="WK6-lx-ddN" id="dKo-Qt-5CR"/>
+                        <outlet property="incomeLabel" destination="8pd-3O-aI4" id="OhE-jE-3pj"/>
+                        <outlet property="spentLabel" destination="dyN-N8-fCh" id="I2F-b3-qch"/>
+                        <outlet property="totalLabel" destination="JiJ-Sy-cdb" id="m2A-dK-ckT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vjo-RR-Mye" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1553,7 +1573,7 @@ Welcome to tomorrow</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H4S-FF-MlE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3439" y="-119"/>
+            <point key="canvasLocation" x="3454" y="62"/>
         </scene>
     </scenes>
     <designables>

@@ -37,6 +37,10 @@
 		B44DF4552629A6C800851950 /* AvatarResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44DF4542629A6C800851950 /* AvatarResponse.swift */; };
 		B44DF45A2629A71000851950 /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44DF4592629A71000851950 /* ApiError.swift */; };
 		B44DF45F2629A77100851950 /* ApiRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44DF45E2629A77100851950 /* ApiRouter.swift */; };
+		B44DF4722629AC8F00851950 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44DF4712629AC8F00851950 /* ApiClient.swift */; };
+		B44DF4782629B0E500851950 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44DF4772629B0E500851950 /* Util.swift */; };
+		B44DF4802629B3C500851950 /* FundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44DF47F2629B3C500851950 /* FundView.swift */; };
+		B44DF4852629B47900851950 /* SoftError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44DF4842629B47900851950 /* SoftError.swift */; };
 		E38177B6C77275A608D111A2 /* Pods_Fundall_FundallUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5EEF19218DECD9AC194F4D8 /* Pods_Fundall_FundallUITests.framework */; };
 		F591B2ABB4A9EE26DD365DF2 /* Pods_Fundall.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB5005561E5FCD0266C53B9 /* Pods_Fundall.framework */; };
 /* End PBXBuildFile section */
@@ -100,6 +104,10 @@
 		B44DF4542629A6C800851950 /* AvatarResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarResponse.swift; sourceTree = "<group>"; };
 		B44DF4592629A71000851950 /* ApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
 		B44DF45E2629A77100851950 /* ApiRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRouter.swift; sourceTree = "<group>"; };
+		B44DF4712629AC8F00851950 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
+		B44DF4772629B0E500851950 /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		B44DF47F2629B3C500851950 /* FundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FundView.swift; sourceTree = "<group>"; };
+		B44DF4842629B47900851950 /* SoftError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoftError.swift; sourceTree = "<group>"; };
 		C5EEF19218DECD9AC194F4D8 /* Pods_Fundall_FundallUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fundall_FundallUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6AD88C4818BA4F4D73104DD /* Pods-FundallTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FundallTests.debug.xcconfig"; path = "Target Support Files/Pods-FundallTests/Pods-FundallTests.debug.xcconfig"; sourceTree = "<group>"; };
 		FAB5005561E5FCD0266C53B9 /* Pods_Fundall.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fundall.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -171,6 +179,7 @@
 		B44DF3422626DEC500851950 /* Fundall */ = {
 			isa = PBXGroup;
 			children = (
+				B44DF4762629B0D300851950 /* Util */,
 				B44DF4332629A2C000851950 /* Network */,
 				B44DF3FC262841D200851950 /* views */,
 				B44DF39E26275F3400851950 /* Auth */,
@@ -235,6 +244,8 @@
 				B44DF4112628BDCF00851950 /* FundallCardTableViewCell.swift */,
 				B44DF4292629986D00851950 /* AnalyticsTableViewCell.swift */,
 				B44DF42E2629988800851950 /* AnalyticsCollectionViewCell.swift */,
+				B44DF47F2629B3C500851950 /* FundView.swift */,
+				B44DF4842629B47900851950 /* SoftError.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -246,6 +257,7 @@
 				B44DF4352629A34500851950 /* NetworkConstants.swift */,
 				B44DF4592629A71000851950 /* ApiError.swift */,
 				B44DF45E2629A77100851950 /* ApiRouter.swift */,
+				B44DF4712629AC8F00851950 /* ApiClient.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -259,6 +271,14 @@
 				B44DF4542629A6C800851950 /* AvatarResponse.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		B44DF4762629B0D300851950 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				B44DF4772629B0E500851950 /* Util.swift */,
+			);
+			path = Util;
 			sourceTree = "<group>";
 		};
 		FEC43C48448EC1F81ED748B6 /* Frameworks */ = {
@@ -509,6 +529,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B44DF4802629B3C500851950 /* FundView.swift in Sources */,
 				B44DF4362629A34500851950 /* NetworkConstants.swift in Sources */,
 				B44DF37F2627489D00851950 /* LoginViewController.swift in Sources */,
 				B44DF40D2628BC9B00851950 /* FundallCardCollectionViewCell.swift in Sources */,
@@ -516,8 +537,10 @@
 				B44DF425262990E700851950 /* AnalyticViewController.swift in Sources */,
 				B44DF45A2629A71000851950 /* ApiError.swift in Sources */,
 				B44DF4032628435000851950 /* FundallHomeTableViewCell.swift in Sources */,
+				B44DF4782629B0E500851950 /* Util.swift in Sources */,
 				B44DF3A026275F5000851950 /* PasswordViewController.swift in Sources */,
 				B44DF3922627505100851950 /* Extensions.swift in Sources */,
+				B44DF4722629AC8F00851950 /* ApiClient.swift in Sources */,
 				B44DF42F2629988800851950 /* AnalyticsCollectionViewCell.swift in Sources */,
 				B44DF4122628BDCF00851950 /* FundallCardTableViewCell.swift in Sources */,
 				B44DF3442626DEC500851950 /* AppDelegate.swift in Sources */,
@@ -530,6 +553,7 @@
 				B44DF4082628554D00851950 /* HomeViewController.swift in Sources */,
 				B44DF4552629A6C800851950 /* AvatarResponse.swift in Sources */,
 				B44DF3462626DEC500851950 /* SceneDelegate.swift in Sources */,
+				B44DF4852629B47900851950 /* SoftError.swift in Sources */,
 				B44DF3FE262841EC00851950 /* FundallProgress.swift in Sources */,
 				B44DF37A2627482C00851950 /* SignUpViewController.swift in Sources */,
 				B44DF43E2629A51B00851950 /* RegisterResponse.swift in Sources */,

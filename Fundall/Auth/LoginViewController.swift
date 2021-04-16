@@ -6,13 +6,24 @@
 //
 
 import UIKit
+import Kingfisher
 
 class LoginViewController: UIViewController {
     let constant = Constants()
+    var name: String!
+    @IBOutlet weak var welcomeLabel: UILabel!
+    @IBOutlet weak var avartar: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        let defaults = UserDefaults.standard
+        name = defaults.string(forKey: "name")
+        welcomeLabel.text = "\(name ?? " ")'s LifeStyle"
+        let urlString = defaults.string(forKey: "avatar")
+        if urlString != nil && !(urlString?.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty)! {
+            let url = URL(string: urlString ?? " ")
+            avartar.kf.setImage(with: url)
+        }
         // Do any additional setup after loading the view.
     }
     

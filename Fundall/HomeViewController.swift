@@ -6,16 +6,35 @@
 //
 
 import UIKit
+import RxSwift
+
 
 class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var fundTable: UITableView!
+    @IBOutlet weak var spentLabel: UILabel!
+    @IBOutlet weak var incomeLabel: UILabel!
+    @IBOutlet weak var totalLabel: UILabel!
+    @IBOutlet weak var avartar: UIImageView!
+
     let constant = Constants()
+    let defaults = UserDefaults.standard
+    var soft = SoftViews()
+    private var disposebag = DisposeBag()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         fundTable.delegate = self
         fundTable.dataSource = self
+        spentLabel.text = defaults.string(forKey: "spent") ?? " "
+        incomeLabel.text = defaults.string(forKey: "income") ?? " "
+        totalLabel.text = defaults.string(forKey: "total") ?? " "
+        let urlString = defaults.string(forKey: "avatar")
+        if urlString != nil && !(urlString?.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty)! {
+            let url = URL(string: urlString ?? " ")
+            avartar.kf.setImage(with: url)
+        }
+      
         // Do any additional setup after loading the view.
     }
     
@@ -40,6 +59,35 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     @IBAction func checkAnalytics(){
         
         constant.presentVC(presenter: self, identifier: "AnalyticViewController")
+    }
+    
+    func getProfile() {
+        APIClient.shared.getProfile().observe(on: MainScheduler.instance).subscribe(onNext: {
+            [self] result in
+            defaults.set(result.success?.data?.email, forKey: "email")
+            defaults.set(result.success?.data?.firstname, forKey: "name")
+            defaults.set(result.success?.data?.avatar, forKey: "avatar")
+            defaults.set(result.success?.data?.firstname, forKey: "spent")
+            defaults.set(result.success?.data?.avatar, forKey: "income")
+            defaults.set(result.success?.data?.totalBalance, forKey: "total")
+            spentLabel.text = result.success?.data?.spent
+            incomeLabel.text = result.success?.data?.income
+            totalLabel.text = result.success?.data?.totalBalance
+            let urlString = result.success?.data?.avatar
+            if urlString != nil && !(urlString?.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty)! {
+                let url = URL(string: result.success?.data?.avatar ?? "")
+                avartar.kf.setImage(with: url)
+            }
+        
+        }, onError: {
+            [self] error in
+            switch error{
+            case ApiError.unauthenticated:
+                soft.unauntenticated("", message: "Session Expired", vc: self)
+            default:
+                print("")
+            }
+        }).disposed(by: disposebag)
     }
 
     /*

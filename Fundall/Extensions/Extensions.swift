@@ -77,3 +77,24 @@ extension BarChartView {
         self.data = chartData
     }
 }
+
+extension String{
+    func passwordValid() -> Bool {
+        let passwordRegex = "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[ !\"\\\\#$%&'()*+,-./:;<=>?@\\[\\]^_`{|}~])[A-Za-z\\d !\"\\\\#$%&'()*+,-./:;<=>?@\\[\\]^_`{|}~]{8,}"
+        return NSPredicate(format: "SELF MATCHES %@", passwordRegex).evaluate(with: self.trimmingCharacters(in: .whitespacesAndNewlines))
+    }
+    
+    func isValidEmail() -> Bool {
+        let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
+        let emailPred = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
+        return emailPred.evaluate(with: self)
+    }
+    //^[0]\d{10}$
+    var isValidPhone: Bool {
+         // let regularExpressionForPhone = "^\\d{3}-\\d{3}-\\d{4}$"
+        //Nigerian phone number
+        let regularExpressionForPhone = "^[0]\\d{10}$"
+          let testPhone = NSPredicate(format:"SELF MATCHES %@", regularExpressionForPhone)
+          return testPhone.evaluate(with: self)
+       }
+}

@@ -7,6 +7,10 @@ target 'Fundall' do
 pod 'TransitionButton'
 pod 'Kingfisher', '~> 6.0'
 pod 'Charts'
+pod 'RxSwift', '6.0.0-rc.1'
+pod 'RxCocoa', '6.0.0-rc.1'
+pod 'Alamofire', '~> 5.2'
+pod 'IQKeyboardManagerSwift'
 
   # Pods for Fundall
 

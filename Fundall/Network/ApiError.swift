@@ -9,4 +9,5 @@ import Foundation
 enum ApiError: Error {
     case error              //Status code 400
     case unauthenticated //stsatus code 401
+    case notFound(message: String)  
 }

@@ -7,10 +7,10 @@
 
 import Foundation
 struct RegisterResponse: Codable {
-    let success: Success?
+    let success: RegisterSuccess?
 }
 
 // MARK: - Success
-struct Success: Codable {
+struct RegisterSuccess: Codable {
     let message, status: String?
 }

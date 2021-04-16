@@ -14,7 +14,7 @@ struct NetworkConstants {
     
  
     //The API's base URL
-    static let baseUrl = "https://campaign.fundall.io"
+    static let baseUrl = "https://campaign.fundall.io/api/v1"
    
     //static var token:String = SoftKeyChain.checkForKeychainNil(key: SoftViews.token)
   //  static var token2 = UserDefaults.standard.string(forKey: "token")
