@@ -11,6 +11,7 @@ pod 'RxSwift', '6.0.0-rc.1'
 pod 'RxCocoa', '6.0.0-rc.1'
 pod 'Alamofire', '~> 5.2'
 pod 'IQKeyboardManagerSwift'
+pod 'FloatingPanel'
 
   # Pods for Fundall
 

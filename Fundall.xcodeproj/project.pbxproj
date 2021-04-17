@@ -42,6 +42,8 @@
 		B44DF4802629B3C500851950 /* FundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44DF47F2629B3C500851950 /* FundView.swift */; };
 		B44DF4852629B47900851950 /* SoftError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44DF4842629B47900851950 /* SoftError.swift */; };
 		B44DF48A2629CB6E00851950 /* NetworkUpload.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44DF4892629CB6E00851950 /* NetworkUpload.swift */; };
+		B44DF49E262AE49900851950 /* FloatingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44DF49D262AE49900851950 /* FloatingTableViewCell.swift */; };
+		B44DF4A3262AE54E00851950 /* FloatingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44DF4A2262AE54E00851950 /* FloatingViewController.swift */; };
 		E38177B6C77275A608D111A2 /* Pods_Fundall_FundallUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5EEF19218DECD9AC194F4D8 /* Pods_Fundall_FundallUITests.framework */; };
 		F591B2ABB4A9EE26DD365DF2 /* Pods_Fundall.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB5005561E5FCD0266C53B9 /* Pods_Fundall.framework */; };
 /* End PBXBuildFile section */
@@ -110,6 +112,8 @@
 		B44DF47F2629B3C500851950 /* FundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FundView.swift; sourceTree = "<group>"; };
 		B44DF4842629B47900851950 /* SoftError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoftError.swift; sourceTree = "<group>"; };
 		B44DF4892629CB6E00851950 /* NetworkUpload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkUpload.swift; sourceTree = "<group>"; };
+		B44DF49D262AE49900851950 /* FloatingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingTableViewCell.swift; sourceTree = "<group>"; };
+		B44DF4A2262AE54E00851950 /* FloatingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingViewController.swift; sourceTree = "<group>"; };
 		C5EEF19218DECD9AC194F4D8 /* Pods_Fundall_FundallUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fundall_FundallUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6AD88C4818BA4F4D73104DD /* Pods-FundallTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FundallTests.debug.xcconfig"; path = "Target Support Files/Pods-FundallTests/Pods-FundallTests.debug.xcconfig"; sourceTree = "<group>"; };
 		FAB5005561E5FCD0266C53B9 /* Pods_Fundall.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fundall.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -196,6 +200,7 @@
 				B44DF4072628554D00851950 /* HomeViewController.swift */,
 				B44DF4162628CA2C00851950 /* CardViewController.swift */,
 				B44DF424262990E700851950 /* AnalyticViewController.swift */,
+				B44DF4A2262AE54E00851950 /* FloatingViewController.swift */,
 			);
 			path = Fundall;
 			sourceTree = "<group>";
@@ -248,6 +253,7 @@
 				B44DF42E2629988800851950 /* AnalyticsCollectionViewCell.swift */,
 				B44DF47F2629B3C500851950 /* FundView.swift */,
 				B44DF4842629B47900851950 /* SoftError.swift */,
+				B44DF49D262AE49900851950 /* FloatingTableViewCell.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -533,6 +539,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B44DF4802629B3C500851950 /* FundView.swift in Sources */,
+				B44DF49E262AE49900851950 /* FloatingTableViewCell.swift in Sources */,
 				B44DF4362629A34500851950 /* NetworkConstants.swift in Sources */,
 				B44DF37F2627489D00851950 /* LoginViewController.swift in Sources */,
 				B44DF40D2628BC9B00851950 /* FundallCardCollectionViewCell.swift in Sources */,
@@ -552,6 +559,7 @@
 				B44DF45F2629A77100851950 /* ApiRouter.swift in Sources */,
 				B44DF34E2626DEC500851950 /* Fundall.xcdatamodeld in Sources */,
 				B44DF4172628CA2C00851950 /* CardViewController.swift in Sources */,
+				B44DF4A3262AE54E00851950 /* FloatingViewController.swift in Sources */,
 				B44DF39A2627557400851950 /* Constants.swift in Sources */,
 				B44DF4432629A57500851950 /* LoginResponse.swift in Sources */,
 				B44DF4082628554D00851950 /* HomeViewController.swift in Sources */,

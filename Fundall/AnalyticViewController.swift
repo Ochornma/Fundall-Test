@@ -13,6 +13,8 @@ class AnalyticViewController: UIViewController {
     @IBOutlet weak var analyticsCollection: UICollectionView!
     @IBOutlet weak var analyticsTableView: UITableView!
     @IBOutlet weak var analyticsView: UIView!
+    @IBOutlet weak var buttonsView: UIView!
+    @IBOutlet weak var analyticbutton: UIButton!
     @IBOutlet weak var analyticsChart: BarChartView!
     
     override func viewDidLoad() {
@@ -24,6 +26,11 @@ class AnalyticViewController: UIViewController {
         analyticsView.layer.cornerRadius = 20
         let avg = ChartLimitLine(limit: 10.0, label: "Average")
         analyticsChart.leftAxis.addLimitLine(avg)
+        analyticsView.layer.cornerRadius = 5
+        buttonsView.layer.cornerRadius = 5
+        analyticbutton.layer.cornerRadius = 5
+        buttonsView.layer.borderWidth = 1
+        buttonsView.layer.borderColor = UIColor(red: 1/255, green: 105/255, blue: 56/255, alpha: 1).cgColor
         setChart()
         // Do any additional setup after loading the view.
     }

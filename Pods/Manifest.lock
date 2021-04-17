@@ -3,6 +3,7 @@ PODS:
   - Charts (3.6.0):
     - Charts/Core (= 3.6.0)
   - Charts/Core (3.6.0)
+  - FloatingPanel (2.3.0)
   - IQKeyboardManagerSwift (6.5.6)
   - Kingfisher (6.2.1)
   - RxCocoa (6.0.0-rc.1):
@@ -16,6 +17,7 @@ PODS:
 DEPENDENCIES:
   - Alamofire (~> 5.2)
   - Charts
+  - FloatingPanel
   - IQKeyboardManagerSwift
   - Kingfisher (~> 6.0)
   - RxCocoa (= 6.0.0-rc.1)
@@ -26,6 +28,7 @@ SPEC REPOS:
   trunk:
     - Alamofire
     - Charts
+    - FloatingPanel
     - IQKeyboardManagerSwift
     - Kingfisher
     - RxCocoa
@@ -36,6 +39,7 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   Alamofire: 2291f7d21ca607c491dd17642e5d40fdcda0e65c
   Charts: b1e3a1f5a1c9ba5394438ca3b91bd8c9076310af
+  FloatingPanel: 373478513a197cf140abd219ca9a9c049967332b
   IQKeyboardManagerSwift: c7df9d2deb356c04522f5c4b7b6e4ce4d8ed94fe
   Kingfisher: e71c6fac2aebb1262888cabc2cb13d313362a48f
   RxCocoa: a28d75145c07b7547b85faf1e1ad8b25af88a752
@@ -43,6 +47,6 @@ SPEC CHECKSUMS:
   RxSwift: dae1a32c48148897494b9e2a6b00a68b40694236
   TransitionButton: 36283346e17c64775a1b3bc3a7a72940a367de1f
 
-PODFILE CHECKSUM: 925abb84e5dcb411b7c4981306265f8c04f070e0
+PODFILE CHECKSUM: 9f92f384fe34894863987922684449e6b35b5bd5
 
 COCOAPODS: 1.10.1
