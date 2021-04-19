@@ -799,7 +799,7 @@
                                                 </connections>
                                             </button>
                                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="WK6-lx-ddN">
-                                                <rect key="frame" x="8" y="420" width="398" height="530"/>
+                                                <rect key="frame" x="8" y="420" width="398" height="482"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <color key="sectionIndexBackgroundColor" red="0.75686274509999996" green="0.76862745099999996" blue="0.78039215689999997" alpha="1" colorSpace="calibratedRGB"/>
                                                 <prototypes>
@@ -945,7 +945,7 @@
                                             <constraint firstItem="5DX-gq-hhK" firstAttribute="centerX" secondItem="hSu-Pa-dCo" secondAttribute="centerX" constant="70" id="We2-oE-OTb"/>
                                             <constraint firstAttribute="height" constant="950" id="Z2F-dA-g8d"/>
                                             <constraint firstItem="y4o-0P-gAp" firstAttribute="leading" secondItem="hSu-Pa-dCo" secondAttribute="leading" id="aBQ-gP-g7b"/>
-                                            <constraint firstAttribute="bottom" secondItem="WK6-lx-ddN" secondAttribute="bottom" id="f2Q-Kg-V1c"/>
+                                            <constraint firstAttribute="bottom" secondItem="WK6-lx-ddN" secondAttribute="bottom" constant="48" id="f2Q-Kg-V1c"/>
                                             <constraint firstItem="5DX-gq-hhK" firstAttribute="top" secondItem="y4o-0P-gAp" secondAttribute="bottom" constant="15" id="fMz-tW-Cau"/>
                                             <constraint firstItem="TC3-Cg-SJS" firstAttribute="centerX" secondItem="hSu-Pa-dCo" secondAttribute="centerX" constant="-70" id="qKH-5V-kdu"/>
                                             <constraint firstItem="y4o-0P-gAp" firstAttribute="top" secondItem="hSu-Pa-dCo" secondAttribute="top" id="sjb-qu-chf"/>

@@ -49,6 +49,9 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "fundacell", for: indexPath) as! FundallHomeTableViewCell
+        if indexPath.row % 2 != 0 {
+            cell.tableCard.backgroundColor = .clear
+        }
         cell.setup()
         return cell
     }
@@ -147,7 +150,7 @@ class FloatingPanelStocksLayout: FloatingPanelLayout {
             .full: FloatingPanelLayoutAnchor(absoluteInset: 56.0, edge: .top, referenceGuide: .safeArea),
             .half: FloatingPanelLayoutAnchor(absoluteInset: 262.0, edge: .bottom, referenceGuide: .safeArea),
              /* Visible + ToolView */
-            .tip: FloatingPanelLayoutAnchor(absoluteInset: 85.0 + 44.0, edge: .bottom, referenceGuide: .safeArea),
+            .tip: FloatingPanelLayoutAnchor(absoluteInset: 44.0, edge: .bottom, referenceGuide: .safeArea),
         ]
     }
 
